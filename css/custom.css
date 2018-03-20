@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Harriet";
+    src: url("../fonts/okay_type_-_harriet_text_bold_italic-webfont.eot");
+    src: url("../fonts/okay_type_-_harriet_text_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/okay_type_-_harriet_text_bold_italic-webfont.woff2") format("woff2"), url("../fonts/okay_type_-_harriet_text_bold_italic-webfont.woff") format("woff"), url("fonts/okay_type_-_harriet_text_bold_italic-webfont.ttf") format("truetype"), url("../fonts/okay_type_-_harriet_text_bold_italic-webfont.svg#bebas_neueregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "bebas_neueregular";
+    src: url("../fonts/bebasneue-webfont.eot");
+    src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff2") format("woff2"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "bebas_neuebold";
+    src: url("../fonts/bebasneuebold-webfont.eot");
+    src: url("../fonts/bebasneuebold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneuebold-webfont.woff2") format("woff2"), url("../fonts/bebasneuebold-webfont.woff") format("woff"), url("../fonts/bebasneuebold-webfont.ttf") format("truetype"), url("../fonts/bebasneuebold-webfont.svg#bebas_neuebold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "proxima_nova_rgregular";
+    src: url("../fonts/proximanova-regular-webfont.eot");
+    src: url("../fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("fonts/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "proxima_nova_rgbold";
+    src: url("../fonts/proximanova-bold-webfont.eot");
+    src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'bebas_neueregular', sans-serif;
+}
+
+.mainBg {
+    background: url(../images/newideacityrobot.jpg) 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.bgOverlay {
+    background: rgba(0,0,0,0.4);
+}
+
+.full {
+    width: 100%;
+    float: left;
+}
+
+.mainInfo {
+    color: #fff;
+    padding: 170px 0;
+        text-align: center;
+}
+
+.mainInfo h3 {
+    font-size: 2em;
+        margin-bottom: 0;
+    color: #000;
+}
+.mainInfo h1 {
+    margin-top: 0;
+    font-size: 9em;
+    font-family: 'bebas_neuebold', sans-serif;
+    letter-spacing: -4px;
+}
+.mainInfo p {font-size: 1.2em;}
+
+a.attendBtn {
+    background: #000;
+    color: #fff;
+    padding: 9px 29px;
+    text-transform: uppercase;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14pt;
+    margin: 24pt auto 0 auto;
+    display: block;
+    width: 160px;
+    text-align: center;
+    transition: 0.2s all;
+}
+a.attendBtn:hover {
+    text-decoration: none;
+    background: #367891;
+}
+
+
+
+.mainInfo h1, .mainInfo h3, .mainInfo p, a.attendBtn   {
+
+    -webkit-animation: fadein 3s;  
+       -moz-animation: fadein 3s;
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+.speakers {
+/*    background: #000;*/
+    background: url(../images/city.jpg) center center;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+}
+
+.speakerDiv {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    padding: 10px;
+}
+
+.speakers h1 {
+    margin: 0 0 30px 0;
+    font-size: 3em;
+    text-align: center;
+    color: #e6e6e6;
+}
+
+.aSpeaker {}
+.aSpeaker h2 {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    transition: 0.2s all;
+}
+
+.aSpeaker p{
+    float: left;
+    width: 100%;
+    margin: 0;
+    color: #a9a9a9;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.aSpeaker:hover {
+    cursor: pointer;
+}
+
+.aSpeaker:hover h2 {
+    color: #367891;
+}
+
+.padBotMd {
+    padding-bottom: 30px;
+}
+
+
+.topics {
+    padding: 80px 0;
+    position: relative;
+}
+.topics h1 {
+    margin: 0 0 30px 0;
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+}
+
+
+a.viewAgenda {
+    background: #000;
+    color: #fff;
+    padding: 9px 29px;
+    text-transform: uppercase;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14pt;
+    margin: 24pt auto 0 auto;
+    display: block;
+    width: 360px;
+    transition: 0.2s all;
+    text-align: center;
+}
+a.viewAgenda:hover {
+    text-decoration: none;
+    background: #367891;
+}
+
+
+.topics {
+/*    background: #000;*/
+    background: url(../images/molecular.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    position: relative;
+}
+
+
+a.viewSpeakers {
+    background: #fff;
+    color: #000;
+    padding: 9px 29px;
+    text-transform: uppercase;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14pt;
+    margin: 24pt auto 0 auto;
+    display: block;
+    width: 360px;
+    transition: 0.2s all;
+    text-align: center;
+}
+a.viewSpeakers:hover {
+    text-decoration: none;
+    background: #367891;
+}
+
+
+.footer {
+    background: #000;
+    padding: 75px 0;
+}
+
+.footerP {
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.speakersTemp p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.locationInfo {
+    margin-top: 60px;
+    color: #e6e6e6;
+    float: left;
+    width: 100%;
+}
+
+.locationInfo  h2 {
+    font-size: 2.4em;
+}
+.locationInfo  h3 {
+    font-size: 1.6em;
+}
+.locationInfo  p {
+    font-size: 1.3em;
+}
+
+.social {
+    text-align: center;
+}
+.social a { 
+    display: inline-block;
+    margin: 0 3px;
+}
+.social i {
+    color: rgba(255,255,255,0.4);
+}
+
+.address {
+    margin-top: 20px;
+}
+.addressTitle {
+    font-family: proxima_nova_rgbold, sans-serif;
+}
+
+.emailAdd {
+    margin-top: 20px;
+}
+
+.attend {
+    background: #367891;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+}
+.attend  h2 {
+    font-size: 2.4em;
+    letter-spacing: 1px;
+}
+a.largeAttend {
+    background: #fff;
+    color: #000;
+    padding: 9px 29px;
+    text-transform: uppercase;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin: 24pt auto;
+    display: block;
+    width: 250px;
+    text-align: center;
+    transition: 0.2s all;
+}
+a.largeAttend:hover {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+}
+
+.revealOnScroll {
+    display: none;
+}
